@@ -3,6 +3,9 @@ from sklearn.model_selection import train_test_split
 
 
 def train_model(df, test_size, random_state, params):
+    """
+    Train Random Forest model and return model with test split.
+    """
 
     X = df.drop(columns=["isFraud"])
     y = df["isFraud"]
