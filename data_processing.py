@@ -23,7 +23,7 @@ def clean_data(df):
         (df["amount"] <= Q3 + 1.5 * IQR)
     ]
 
-    # Remove multicollinearity
+    # Remove multicollinearity from the data 
     corr_matrix = df.corr().abs()
     upper = corr_matrix.where(
         np.triu(np.ones(corr_matrix.shape), k=1).astype(bool)
