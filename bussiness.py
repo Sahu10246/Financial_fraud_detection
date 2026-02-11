@@ -1,5 +1,9 @@
 def print_business_summary():
-
+    """
+    Print key fraud indicators, prevention strategies,
+    and success metrics based on model insights.
+    """
+      
     print("\n==============================")
     print("BUSINESS INSIGHTS")
     print("==============================")
